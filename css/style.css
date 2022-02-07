@@ -1,0 +1,153 @@
+@import url(./gb.css);
+
+/* Header */
+.hd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.hd h1 {
+  margin-right: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hd p {
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+
+/* Introdução */
+.in {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.in h1 {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+.in p {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.in-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* rastreamento */
+.ras-ip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ras-ip h2 {
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.ras-busca {
+  display: flex;
+  gap: 10px;
+}
+
+.ras-busca input[type="text"] {
+  border: 2px solid #000;
+  overflow: hidden;
+  padding: 12px;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 4px;
+  width: 600px;
+  box-sizing: border-box;
+}
+
+.ras-busca button {
+  background: #1b9105;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 24px;
+}
+
+.ras-resul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  text-align: center;
+  gap: 50px;
+}
+
+.ras-resul ul {
+  padding-right: 20px;
+  border-right: 2px solid #000000;
+}
+
+.ras-resul ul:first-child {
+  padding-left: 20px;
+  border-left: 2px solid #000000;
+}
+
+.pri {
+  font-weight: 500;
+  font-size: 18px;
+  color: #403c3c;
+}
+
+.sub {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.ras-img img {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+  .in {
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  .in h1 {
+    font-size: 2.5rem;
+  }
+  .in p {
+    font-size: 20px;
+  }
+  .ras-ip h2 {
+    margin-top: 20px;
+  }
+  .ras-busca input[type="text"] {
+    width: 100%;
+  }
+  .pri {
+    font-size: 14px;
+  }
+  .sub {
+    font-size: 20px;
+  }
+
+  .ras-resul ul:first-child {
+    border: none;
+    padding-left: 0;
+  }
+
+  .ras-resul ul {
+    padding-right: 0;
+    border-right: none;
+  }
+}
